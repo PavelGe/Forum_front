@@ -1,0 +1,26 @@
+.main {
+  height: 70px;
+  background-color: rgba(224, 217, 217, 0.5);
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+}
+.userWrapper {
+  background-color: rgba(224, 217, 217, 0.6);
+  border: 1px solid rgb(179, 170, 170);
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.user {
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(235, 130, 130);
+  border-radius: 5px;
+  height: 25px;
+  width: max-content;
+  padding: 2px;
+  text-align: center;
+  margin: 16px 10px 0 10px;
+}

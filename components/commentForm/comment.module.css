@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: rgb(93, 93, 247);
+  cursor: pointer;
+}
+
+.title:hover {
+  color: rgb(125, 125, 248);
+}
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.main button {
+  border: 1px solid rgb(92, 92, 92);
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(44, 107, 243, 0.7);
+  cursor: pointer;
+  transition: 0.4s ease;
+  border-radius: 4px;
+  color: white;
+  margin-top: 20px;
+}
+
+.main button:hover {
+  background-color: rgba(104, 146, 238, 0.7);
+}
+
+.answerArea {
+  width: 600px;
+}
