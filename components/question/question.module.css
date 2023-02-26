@@ -1,0 +1,65 @@
+.main {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 900px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-areas:
+    "comments main"
+    "comments footer";
+  grid-template-columns: 10% 90%;
+}
+
+.title {
+  color: rgb(93, 93, 247);
+  cursor: pointer;
+  width: max-content;
+}
+
+.title:hover {
+  color: rgb(125, 125, 248);
+}
+
+.commentCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid black;
+  grid-area: comments;
+  background-color: rgb(237, 240, 240);
+}
+
+.question {
+  margin-left: 10px;
+  grid-area: main;
+  overflow: hidden;
+}
+
+.author {
+  border-top: 1px solid black;
+  grid-area: footer;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+  .main {
+    width: 500px;
+  }
+  .commentCounter {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .main {
+    width: 350px;
+    grid-template-columns: 12% 88%;
+  }
+  .commentCounter {
+    text-align: center;
+    font-size: 11px;
+  }
+}

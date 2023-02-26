@@ -1,0 +1,101 @@
+.main {
+  margin-top: 10px;
+}
+
+.questionWrapper {
+  display: grid;
+  grid-template-areas:
+    "question footer"
+    "question delete";
+  grid-template-columns: 90% 10%;
+  width: 900px;
+  margin: auto;
+  padding: 50px;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.questionMain {
+  grid-area: question;
+}
+
+.author {
+  border: 1px solid black;
+  border-right: none;
+  background-color: rgb(226, 222, 222);
+  width: max-content;
+  grid-area: footer;
+  width: 50px;
+  text-align: center;
+  margin-left: 89px;
+}
+
+.delete {
+  grid-area: delete;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+.questionWrapper h1 {
+  border-bottom: 1px solid black;
+  margin: 0;
+}
+
+.answers {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(224, 217, 217, 0.5);
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .questionWrapper {
+    padding: 5px;
+  }
+  .author {
+    margin-left: 45px;
+  }
+
+  .delete {
+    margin-left: 45px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .questionWrapper {
+    width: 500px;
+  }
+  .author {
+    margin-left: 14px;
+    width: 40px;
+    font-size: 12px;
+  }
+
+  .delete {
+    margin-left: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .questionWrapper {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .questionWrapper {
+    width: 300px;
+  }
+  .author {
+    margin-left: 4px;
+    width: 30px;
+    font-size: 10px;
+  }
+  .delete {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+}
